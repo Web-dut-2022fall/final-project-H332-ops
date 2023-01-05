@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页</title>
+	<link rel="stylesheet" type="text/css" href="./css/mainstyle.css"/>
+	<script src="./js/jquery.min.js"></script>
+</head>
+
+<body background="image/login1.jpg">
+	
+<!-----------------上方导航栏---------------->
+	
+<nav>
+  <div class="logo">Fashion&nbsp; &nbsp;&nbsp; &nbsp;Home</div>
+	<ul class="nav-menu">
+		
+		<li><a href="#new">&nbsp;新款上新</a>
+	  		<ul class="Two">
+                    <li>春季新款</li>
+                    <li>夏季新款</li>
+                    <li>秋季新款</li>
+					<li>冬季新款</li>
+            </ul>
+		</li>
+		
+	  	<li><a href="#hot_sale">促销热卖</a>
+			<ul class="Two">
+                    <li>服装</li>
+                    <li>饰品</li>
+                    <li>彩妆</li>
+					<li>鞋包</li>
+                </ul>
+		</li>
+		
+		<li><a href="#personal">个人中心</a>
+			<ul class="Two">
+                    <li><a href="message.html">留言</a></li>
+                    <li><a href="upload.html">投稿</a></li>
+             
+                </ul>
+		</li>
+	
+		<li><a href="" >下载中心</a>
+			<ul class="Two">
+                    <li><a href="./image/新款杂志图片下载.zip">图片下载</a></li>
+                    <li><a href="#">视频下载</a></li>
+                    <li><a href="./新款文字介绍.zip">介绍下载</a></li>
+             </ul>
+		</li>
+
+		<li><a href="" target="_blank"> &nbsp; &nbsp;更多</a>
+			<ul class="Two">
+                    <li><a href="login.html">退出登录</a></li>
+                    <li><a href="register.html">注册账户</a></li>
+             
+                </ul>
+		</li>
+  </ul>	
+  </nav>
+
+
+
+<!------------------搜索框-------------------->
+	
+<div class="box">	
+	<form action="https://baidu.com/s" method="get" accept-charset="UTF-8">
+		<input type="text"  placeholder="请输入要查找的内容">
+		<input type="submit" value="开始搜索">
+	</form>
+</div>
+	
+<div class="good"><h3>尊敬的用户，您好!</h3></div>
+	
+	
+<!---------------左侧产品导航栏---------------->
+<div class="product_sort fl">
+  <div class="hd">产品导航</div>
+		
+  <div class="bd">
+    <div class="item">
+      <div class="title one"><a href="#"><i></i>服装</a></div>
+      <div class="list">
+       <a href="#">T恤</a>
+        <a href="#">衬衫</a>	 
+        <a href="#">短裤</a>
+       <a href="#">长裤</a>		
+      </div>
+      <div class="arrow">></div>
+      <div class="line"></div>
+
+    <div class="item">
+      <div class="title two"><a href="#"><i></i>饰品</a></div>
+      <div class="list">
+        <a href="#">项链</a>
+        <a href="#">耳饰</a>
+        <a href="#">首饰</a>
+        <a href="#">戒指</a>
+        <a href="#">手表</a>
+      </div>
+      <div class="arrow">></div>
+		<div class="line"></div>
+      </div>
+	  
+	  <div class="item">
+      <div class="title"><a href="#"><i></i>美妆</a></div>
+      <div class="list">
+        <a href="#">彩妆</a>
+        <a href="#">护肤</a>
+        <a href="#">美妆工具</a>
+           
+      </div>
+      <div class="arrow">></div>
+		<div class="line"></div>
+      </div>
+	  
+	  <div class="item">
+      	<div class="title"><a href="#"><i></i>鞋包</a></div>	  
+      	<div class="list">
+        	<a href="#">凉鞋</a>
+        	<a href="#">休闲鞋</a>
+        	<a href="#">手提包</a>
+       </div>
+      <div class="arrow">></div>
+	  <div class="line"></div>
+     </div>
+	</div>
+ </div>
+</div>
+	
+<!----------------轮播图片----------------->
+<!--<div class="images" alt=""><img id="image"/></div>-->
+ <div class="slider">
+            <div id="sliderBox">
+                <div class="pic">
+                    <ul>
+                        <li><img src="./image/c2.jpg" alt=""/></li>
+                        <li><img src="./image/c6.jpg" alt="" /></li>
+                        <li><img src="./image/c3.jpg" alt="" /></li>
+                        <li><img src="./image/c1.jpg" alt="" ></li>
+                        <li><img src="./image/c5.jpg" alt="" ></li>
+						 <li><img src="./image/7.jpg" alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+            <div class="bigBtn">
+                <div class="previous">
+                  <p>&lt;</p>
+                  <p>&nbsp;</p>
+                </div>
+                <div class="next">></div>
+            </div>
+        </div>
+        <script src="./js/picmove.js" type="text/javascript" charset="utf-8"></script>
+  
+	
+<!----------------新款图片----------------->
+<div class="blog">
+<a name="new"></a>	
+<div class="blog1">
+	<span class="new_style"><h1>新款上新</h1></span>
+		<li><div><img src="image/1.jpg" alt="blog1" title="新款1 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款1</p></div></li>
+		
+		<li><div><img src="image/2.jpg" alt="blog1" title="新款2 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款2</p></div></li>
+
+		<li><div><img src="image/3.jpg" alt="blog1"title="新款3 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款3</p></div></li>
+
+		<li><div><img src="image/4.jpg" alt="blog1" title="新款4 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款4</p></div></li>
+		
+		<li><div><img src="image/5.jpg" alt="blog1" title="新款5 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款5</p></div></li>
+		
+		<li><div><img src="image/6.jpg" alt="blog1" title="新款6 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款6</p></div></li>
+
+		<li><div><img src="image/10.jpg" alt="blog1" title="新款7 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款7</p></div></li>
+
+		<li><div><img src="image/11.jpg" alt="blog1" title="新款8 Salvatore Ferragamo 秋冬米兰时装周"/><p>新款8</p></div></li>
+</div>
+
+<!-------------------促销热卖------------------------>
+<span class="new_style" id="hot_sale"><h1>促销热卖</h1></span>
+<div class="container">
+		<div class="card">
+			<div class="imge">
+				<img src="./image/c1.jpg" alt="" width="320" height="200" >
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥10800</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">MKGO彩虹系列手提包</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="imge">
+				<img src="./image/c2.jpg" alt="" width="320" height="200" >
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥12800</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">RADO瑞士雷达表真薄系列星钻腕表</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="img">
+				<img src="./image/c3.jpg" alt="" width="320" height="200">
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥13580</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">FEO《KISS LOVE 亲.爱的幸福礼盒》</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<div class="container1">
+		
+		<div class="card">
+			<div class="imge">
+				<img src="./image/c4.jpg" alt="" width="320" height="200" >
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥25800</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">迪奥“30 Montaigne”手提包</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="imge">
+				<img src="./image/c5.jpg" alt="" width="320" height="200" >
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥22800</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">TOWARDS SUMMER迎夏系列手提包</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="img">
+				<img src="./image/c6.jpg" alt="" width="320" height="200">
+			</div>
+			<div class="top-text">
+				<div class="name">Price</div>
+				<p>￥13580</p>
+			</div>
+			<div class="botton-text">
+				<div class="text">BVLGARI宝格丽Serpenti Forever Cabochon系列柔软小牛皮包袋</div>
+				<div class="btn">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+<!--------------------视频介绍--------------------->
+
+<div class="mov">
+	<span class="new_style" id="movie"><h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 视频介绍</h1>
+	</span>
+	<video src="./image/clip.mp4" preload controls>您的浏览器不支持视频元素</video>
+</div>
+
+<!-- ------------------底部----------------------->
+
+  <div class="footer">
+  		<div class="alt">
+    		<div class="foot">
+     			<p>关于我们</p >
+     				<a href="#">企业简介</a>
+     				<a href="###">企业文化</a>
+     				<a href="###">组织机构</a>
+     				<a href="###">发展历程</a>
+     				<a href="###">企业荣誉</a>
+    		</div>
+    	<div class="foot">
+     		<p>新闻中心</p >
+    		 <a href="###">公司新闻</a>
+     		 <a href="###">行业新闻</a>
+			 <a href="###">时尚新闻</a>
+    	</div>
+    	<div class="foot">
+     		<p>合作伙伴</p >
+			 <a href="###">阿玛尼</a>
+			 <a href="###">GOYARD戈雅</a>
+			 <a href="###">Chanel香奈儿</a>
+     		 <a href="###">Dior迪奥</a>
+     		 <a href="###">GUCCI古驰</a>
+			 <a href="###">Moynat摩奈</a>
+   		</div>
+    	<div class="foot">
+     		<p>广告合作</p >
+     		<a href="#">杂志广告</a>
+     		<a href="#">视频广告</a>
+			<a href="#">海报广告</a>
+    	</div>
+    	
+    	<div class="foot">
+     		<p>服务支持</p >
+     		<a href="#">技术支持</a>
+     		<a href="#">服务网络</a>
+     		<a href="#">品牌支持</a>
+    	</div>
+    	<div class="foot">
+     		<p>关注我们</p >
+     		<img src="./image/ma.jpg" alt="" />
+    	</div>
+   	</div>
+   		<div style="border-top:1px #1F1F1F solid;">
+    	<p class="alt">版权所有：Fashion有限公司 </p>
+   		</div>
+  	</div>
+</div>
+
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

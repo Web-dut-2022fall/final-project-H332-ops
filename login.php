@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<?php
+    $conn = mysqli_connect('localhost','root','11111','test') or die('数据库连接失败');
+    $conn->query("SET NAMES 'UTF8'");
+ 
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
+    $sql="SELECT * FROM users where user='{$user}' and pass='{$pass}'"; 
+ 
+    $result=$conn->query($sql);
+    $row = mysqli_num_rows($result);
+	//若表中存在输入的用户名和密码，row=1；若表中用户名不存在或密码错误，则row=0
+ 
+    if($row == 1){
+		echo "<script language='javascript'>";
+		echo "alert('登录成功！即将进入主页！');";
+		echo "window.location.href='main.html';";
+		echo "</script>";
+    }
+    else{
+        echo "<script language='javascript'>";
+		echo "alert('登录失败！即将返回登录页面！');";
+		echo "window.location.href='login.html';";
+		echo "</script>";
+    }	
+?>	

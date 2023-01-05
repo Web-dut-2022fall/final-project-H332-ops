@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>留言</title>
+	   <link rel="stylesheet" type="text/css" href="./css./message.css"/>
+ </head>
+ <body>
+         
+    <div class="message">
+        <form action="add.php" method="post" class="form">
+			<h2 class="head-title">留言板</h2>
+             <p>
+                 <label for="names">&nbsp; 姓名:&nbsp; &nbsp;</label>
+                 <input id="names" type="text" name="names">
+            </p>
+             <p>
+                 <label for="qq">&nbsp;&nbsp;QQ:&nbsp; &nbsp;&nbsp;</label>
+                 <input id="qq" type="text" name="qq">
+             </p>
+             <p>
+               <label for="email">&nbsp;email:&nbsp;&nbsp;</label>
+               <input id="email" type="text" name="email">
+            </p>
+             <p>
+                 <textarea id="messages" name="messages" class="f-messages" placeholder="请在此区域输入您的留言"></textarea>
+            </p>
+            <p style="text-align: center;">
+                <input type="submit" name="sub" value="提交" >
+                 &nbsp; &nbsp; &nbsp;&nbsp;
+<input type="reset" name="" value="重置" >
+            </p>
+         </form>
+     </div>
+
+     
+</body>
+</html>

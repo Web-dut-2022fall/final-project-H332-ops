@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>投稿</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/upload.css"/>
+</head>
+<body>
+	<div class="content">
+		<!-- enctype="mulipart/form-data"属性是指以二进制方式进行数据传输 
+		传输文件需要设置-->
+		<h1>Fashion</h1>
+	  <form action="upload_action.php" method="post" enctype="multipart/form-data">
+		<p>作者姓名：<input type="text" name="uname" require=""/></p>
+		<p>联系电话：<input type="text" name="phone" require=""/></p>
+		<p>电子邮箱：<input type="text" name="email" require=""/></p>
+		<p>稿件描述：<textarea name="describ" class="decrib" placeholder='请在此区域输入稿件描述, 只允许上传"jpeg","png","jpg","gif"格式的图片。若稿件为非原创,请在稿件描述处标明出处。'/></textarea></p>
+	
+		<p>原创：是<input type="radio" name="original" value="是" checked/>否<input type="radio" name="original" value="否" /></p>
+	
+		<input type="file" name="pic" id=""/><br/>
+		<p><input type="submit" name="submit" value="上传"/>
+		  &nbsp; &nbsp;&nbsp;
+		<input type="reset" value="重置"/></p>
+		 
+	</form>
+		
+	</div>
+</body>
+</html>

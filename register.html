@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+	<link rel="stylesheet" type="text/css" href="./css./registerstyle.css"/>
+	<script type="text/javascript" src="./js/register.js" > </script>
+</head>
+<body>
+    <div class="zhuce">
+        <p><h1>注册</h1></p>
+        <form action="register.php" method="post" name="form1" onSubmit="return Inputcheck(form1)">
+            <p><label>用户名称：</label><input type="text" name="user" required="" placeholder="请输入用户名称"/></p>
+            <p><label>设置密码：</label><input type="password" name="pass" required="" placeholder="建议使用两种不同字符"/></p>
+			<p><label>确认密码：</label><input type="password" name="pass0" required="" placeholder="请输入再次输入密码"/></p>
+            <p><label>联系电话：</label><input type="text" name="connect" value="" required="" placeholder="请输入手机号或电话号码"/></p>
+            <p>
+                <input type="reset" name="" value="重置" />
+				<input type="submit" name=""  value="提交"/>
+            </p>
+        </form>
+        <a href="login.html">已注册</a>
+    </div>
+</body>
+</html>
