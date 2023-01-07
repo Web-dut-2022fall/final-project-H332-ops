@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: rgba(241,186,227,.6);
+	position: relative;
+	top: 260px;
+	
+}
+
+.content {
+	position:relative;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 450px;
+	padding: 40px;
+	background:rgba(249,248,248,.7);
+	box-sizing: border-box;
+	box-shadow: 1px 18px rgba(249,248,248,.4);
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+form{
+	position: relative;
+	top: -15%;
+	
+}
+h1{
+	position: relative;
+	top: -35px;
+	margin-bottom: 40px;
+}
+
+.note p{
+	width: 400px;
+	position: relative;
+	right: 40px;
+}
+.decrib {
+	width: 200px;
+	height: 100px;
+}

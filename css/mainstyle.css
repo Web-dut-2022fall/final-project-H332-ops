@@ -1,0 +1,566 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*---------------横向导航栏----------------*/
+nav{
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	display: flex;   /*横向自适应*/
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5vw;
+	height: 60px;
+	background-color: rgba(96,94,94,0.9);
+	
+}
+
+.logo{
+	font-size: 28px;
+	font-weight: 600;
+	color: white;
+	flex: 1;
+	position: relative;
+	left:-10%;
+}
+
+.nav-menu{
+	flex:1;
+	display: flex;
+	justify-content: space-between;
+	nax-width:550px;
+	
+}
+
+.nav-menu li{
+	list-style:none;
+	font-weight: 600;
+	
+}
+
+.nav-menu li a{
+	font-size: 20px;
+	color: white;
+	text-decoration-line: none;
+	transition: 0.5s;
+	height: 30px;
+	
+}
+.nav-menu li a:hover{
+	color:rgba(241,172,233,1.00);
+}
+
+/*--------------导航栏二级下拉菜单------------*/
+ .nav-menu .Two{
+	 display:none;/* 先使二级菜单的内容隐藏 */
+	 position: absolute;
+	 color: white;
+	 background:rgba(110,100,103,0.9);
+	 width:85px;
+	 align-content: center;
+	 padding: 20px 0 20px 0;
+	 z-index: 2;
+	 top: 40px;
+	 margin-top: 5px;
+	 font-size: 16px;
+}
+
+.Two li a{
+	font-size: 16px;
+}
+
+
+.nav-menu li:hover ul{display:block; }    /* 鼠标滑过一级菜单后的显示二级菜单 */
+ .nav-menu .Two li{padding: 5px 0;transition: .4s;cursor: pointer;}
+ .nav-menu .Two li:hover{background: pink;}
+
+
+/*------------------搜索框-------------------*/
+
+.box{
+	position:absolute;
+	top: 20%;
+	left:75%;
+	width: 550px;
+	transform: translate(-50%,-50%);
+}
+
+input{
+	position:relative;
+	display: inline-block;
+	font-size: 15px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	
+}
+
+.box input[type="text"]{
+	background: white;
+	width: 400px;
+	height: 35px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+	border-radius: 25px;
+}
+
+.box input[type="submit"]{
+	position: relative;
+	left: 10px;
+	border-radius:25px;
+	width: 100px;
+	height: 35px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: white;
+	color: rgba(162,144,192,1.00);
+	
+}
+
+.box input[type="submit"]:hover{
+	background: rgba(105,99,103,0.6);
+}
+
+/*----------------左侧导航栏-----------------*/
+
+.product_sort{
+  margin:20px;
+  width:226px;
+  height:392px;
+  background:white;
+  position:absolute; 
+  left:0;
+  top: 22%;
+}
+
+
+.product_sort .hd{
+  width:226px;
+  background:rgba(105,99,103,1.00);
+  height:85px;
+  line-height:85px;
+  text-indent:10px;
+  font-size:23px;
+  font-weight:bold;
+  font-family:"微软雅黑";
+  color:#fff;
+ 
+}
+.product_sort .bd{
+  padding-bottom:10px;
+}
+.product_sort .bd .item{
+  border-bottom:solid 1px rgba(105,99,103,1.00);
+  height:80px;
+  position:relative;
+}
+.product_sort .bd .item .title{
+  width:226px;
+  text-indent:43px;
+  height:40px;
+  overflow:hidden;
+  line-height:42px;
+  font-size:20px;
+  font-weight:bold;
+  color:#292929;
+}
+
+/*产品导航标题：服装，饰品*/
+
+.product_sort .bd .item .title a{
+  color:black;
+  position:relative;
+  left: -10%;
+  text-decoration:none;
+}
+
+.product_sort .bd .item .one a i{
+  width:19px;
+  height:19px;
+  background-position:0 0;
+  left:-25px;
+  top:-3px;
+}
+.product_sort .bd .item .two a i{
+  width:22px;
+  height:20px;
+  background-position:0 -51px;
+  left:-28px;
+  top:-5px;
+}
+
+
+.product_sort .bd .item .list{
+  width:210px;
+  padding-left:15px;
+  height:30px;
+  line-height:30px;
+  overflow:hidden;
+}
+.product_sort .bd .item .list a{
+  font-family:"微软雅黑";
+  color:#333;
+}
+.product_sort .bd .item .list a:hover{
+  text-decoration:underline;
+	color: rgba(236,175,202,1.00);
+	font-size: 22px;
+	transition: 0.5s;
+}
+
+/*导航栏箭头*/
+.product_sort .bd .item .arrow{
+  font-family:"微软雅黑";
+  font-size:20px;
+  color:black;
+  position:absolute;
+  right:10px;
+  top:14px;
+}
+
+
+
+
+/*--------------------图片轮播----------------------*/
+
+.slider{
+    width: 700px;
+    height: 380px;
+    border: 1px solid;
+    margin: 50px auto;
+    position: relative;
+	top:80px;
+	left: 100px;
+               
+}
+.slider .pic{
+    height: 300px;
+    position: absolute;
+    left: 0;
+}
+.slider .pic li{
+    width: 700px;
+    height: 380px;
+    list-style: none;
+    float: left;
+}
+.slider .pic li img{
+    width: 100%;
+    height: 100%;
+ }
+
+.slider .btn{
+    width: 150px;
+    height: 20px;
+    position: relative;
+    margin: 0 auto;
+    top: 260px;
+}
+.slider .btn span{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius:50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+	position: relative;
+	top: 80px;
+}
+.bigBtn{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+.bigBtn div{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.bigBtn div:nth-child(1){
+     float: left;
+}
+.bigBtn div:nth-child(2){
+    float: right;
+}
+.bg{
+    background-color: greenyellow !important;
+}
+
+#sliderBox{
+    margin: 0 auto;
+    width: 700px;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*-----------新款热卖---------------*/
+
+.blog {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	align-items: center;
+	top: 90%;
+	left: 11%;
+	
+}
+
+/*新款图片*/
+.blog .blog1 img{
+	width: 200px;
+	height: 250px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+/*实现鼠标移动到图片时放大1.4倍效果*/
+.blog .blog1 img:hover{
+	transform:scale(1.4); 
+}
+
+.blog1 {
+	position: absolute;
+	top: 80%;
+	width: 1000px;
+	
+}
+.blog1 li{
+	
+	float:left;
+	list-style: none;
+	margin: 25px;
+	display: block;
+	
+}
+
+
+.new_style {
+	color: white;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+.new_style:hover{
+	color: aqua;
+	transition: 0.3s;
+}
+
+.good {
+	position: absolute;
+	top: 15%;
+	left:5%;
+	color: white;
+}
+
+
+/*------------------促销热卖-------------------*/
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins','sans-serif';
+}
+
+html,body{
+	height: 100%;
+	display:grid;
+	place-items:center;
+	text-align: center;
+}
+
+#hot_sale h1{
+	position:relative;
+	top: 1150px;
+	left:210px;
+}
+.container{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 1300px;
+	left: -30px;
+}
+.container1{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 1720px;
+	left: -30px;
+}
+
+.card{
+	height:290px;
+	width:320px;
+	margin: 0 20px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	background: white;
+	transition: 0.4s;
+}
+
+.card:hover{
+	height: 400px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.card.imge img{
+	height:50%;
+	width: 50%;
+	object-fit: cover;
+}
+
+.card .top-text{
+	padding: 7px;
+	background: white;
+}
+
+.card .top-text .name{
+	font-size: 30px;
+	font-weight: 600;
+	color: #202020;
+}
+
+.card .top-text p{
+	font-size: 20px;
+	font-weight: 600;
+	color: #e74c3c;
+	line-height: 20px;
+}
+
+.card .botton-text{
+	padding: 0 20px 10px 20px;
+	background: white;
+	opacity: 0;
+	visibility: visible;
+	transition:0.1s;
+	font:black;
+}
+.card:hover .botton-text{
+	padding: 0 20px 10px 20px;
+	opacity: 1;
+	visibility:visible;
+	background: white;
+}
+
+.card .botton-text .text{
+	text-align: center;
+}
+
+.card .botton-text .btn{
+	width:120px;
+	height: 30px;
+	margin:30px 80px;
+	text-align: center;
+	background:#e74737;
+	border-radius: 3px;
+	color: black;
+	z-index: 6;
+}
+
+.card .botton-text .btn a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 3px;
+	display: inline-flex;
+	transition:0.2s;
+}
+
+.card .botton-text .btn a:hover{
+	transform: scale(0.9);
+}
+
+
+/* ----------------视频介绍栏----------------- */
+
+.mov video {
+	position: relative;
+	width: 800px;
+	left: 90px;
+	top: 2300px;
+}
+#movie h1{
+	position:relative;
+	top: 2200px;
+	left:70px;
+}
+
+/*-----------------底部模块-------------------------*/
+.footer {
+    background:rgba(96,94,94,0.9);
+	position: absolute;
+	top: 3200px;
+	left: -140px;
+   }
+   
+   .footer .alt {
+    overflow: hidden;
+    padding: 20px 0;
+    width: 1270px;
+    margin: auto;
+	color:#999; 
+	line-height:0;
+   }
+   
+ .footer .alt .foot {
+    width: 200px;
+    float: left;
+   }
+.foot img{}
+   
+   .footer .alt .foot p {
+    color: #FFF;
+	margin-bottom: 20px;
+	font-size: 20px;
+    line-height: 28px;
+   }
+   
+   .footer .alt .foot a {
+    color: #fff;
+    display: block;
+    line-height: 24px;
+	margin-bottom: 8px;
+   }
+   
+   .footer .alt .foot a:hover {
+    color: #CCC;
+   }
+   
+   .footer .alt .foot img {
+    padding-top: 10px;
+    width: 120px;
+	height: 120px;
+   }
+	
+
+
+

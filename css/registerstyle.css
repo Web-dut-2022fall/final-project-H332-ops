@@ -1,0 +1,97 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: rgba(241,186,227,.6);
+}
+
+
+.zhuce {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 400px;
+	padding: 40px;
+	background:rgba(249,248,248,.7);
+	box-sizing: border-box;
+	box-shadow: 0.15px 18px rgba(249,248,248,.5);
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+.zhuce h1{
+	position: relative;
+	top: -30px;
+	margin:0 0 30px;
+	color: rgba(237,155,239,1.00);
+	text-align: center;
+}
+
+
+.zhuce form{
+	position: relative;
+	top: -30px;
+}
+
+.zhuce .inputBox input{
+	width:100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+}
+
+
+.inputBox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgb(237,155,239,1.00);
+	pointer-events: none;
+	transition: .5s;
+	
+}
+
+
+/*设置submit按钮*/
+.zhuce input[type="submit"],input[type="reset"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	background: rgba(241,186,227,.6);
+	padding: 10px 20px;
+	cursor:pointer;
+	border-radius: 5px;	
+}
+
+.zhuce input[type="text"],input[type="password"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	background: rgba(241,186,227,.6);
+	padding: 10px 20px;
+	cursor:pointer;
+	border-radius: 5px;	
+}
+	
+	
+
+a{
+	color:rgba(237,155,239,1.00);
+	font-size: 18px;
+	position: relative;
+	top: -30px;
+}
